@@ -1,0 +1,48 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px; /* Espacio entre las celdas */
+    width: 300px; /* Ancho de la cuadrícula */
+    height: 300px; /* Alto de la cuadrícula */
+    margin: 0 auto; /* Centra la cuadrícula en el medio */
+}
+
+.item,h1,h2 {
+    border: 1px solid #000;
+    /*centrar*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    /*no seleccionar*/
+    user-select: none;
+
+    margin: 70;
+    padding: 0;
+
+}
+
+
+/*Eliminar scroll horizontal y vertical*/
+body {
+
+    
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+ 
+#reset{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: 40px;
+}
